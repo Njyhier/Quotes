@@ -1,10 +1,10 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { InputForm } from './input-form/input-form';
+import { QuoteComponent } from './quote/quote';
 
 @Component({
   selector: 'app-root',
-  imports: [InputForm],
+  imports: [InputForm, QuoteComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

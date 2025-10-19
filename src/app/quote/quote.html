@@ -1,0 +1,9 @@
+
+<h1 class="bg-teal-400 text-5xl text-center min-h-20 pt-4 rounded-2xl shadow-2xl text-white">QUOTES TO KEEP YOU GOING</h1>
+<div *ngFor="let quote of quotes" class="shadow-lg rounded-2xl m-4 hover:shadow-2xl p-5 bg-cyan-400 shadow-blue-950">
+  <h1 class="text-2xl font-bold">{{quote.author}}</h1>
+  <p class="text-amber-50 font-serif italic font-bold pt-6 pb-6"> <span class="text-4xl font-extrabold">"</span> {{ quote.quote }}<span class="text-4xl font-extrabold">"</span></p>
+  <button type="button" class="inline-flex items-center rounded-md bg-purple-400/10 px-2 py-1 text-xs font-medium text-purple-400 inset-ring inset-ring-purple-400/30 ml-2">👍🏽</button>
+  <button type="button" class="inline-flex items-center rounded-md bg-purple-400/10 px-2 py-1 text-xs font-medium text-purple-400 inset-ring inset-ring-purple-400/30 ml-2">👎🏽</button>
+</div>
+<button type="button" class="badge bg-emerald-950 text-amber-50 m-auto block p-2 rounded-xl">Add Quote</button>
